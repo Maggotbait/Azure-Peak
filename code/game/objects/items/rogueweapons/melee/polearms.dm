@@ -344,18 +344,12 @@
 	special = /datum/special_intent/polearm_backstep
 
 /obj/item/rogueweapon/spear/short
-	force = 22
+	force = 25
 	force_wielded = 25
 	possible_item_intents = list(SHORT_SPEAR_THRUST, SHORT_SPEAR_CUT)
+	gripped_intents = list(SHORT_SPEAR_THRUST, SHORT_SPEAR_CUT, SPEAR_BASH) 
 	name = "short spear"
 	icon_state = "short_spear"
-	icon = 'icons/roguetown/weapons/polearms64.dmi'
-	pixel_y = -16
-	pixel_x = -16
-	inhand_x_dimension = 64
-	inhand_y_dimension = 64
-	bigboy = TRUE
-	gripsprite = TRUE
 	wlength = WLENGTH_LONG
 
 /obj/item/rogueweapon/spear/trainer
