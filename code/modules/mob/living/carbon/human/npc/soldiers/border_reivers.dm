@@ -450,3 +450,38 @@
 	shoes = /obj/item/clothing/shoes/roguetown/ridingboots
 	//Weapons
 	add_random_reiver_weaponshighgear(H)
+
+
+//Simple Mobs
+
+/mob/living/simple_animal/hostile/rogue/border_reiver_crossbow
+	name = "Reiver Crossbowman"
+	icon = 'icons/mob/border_reivers.dmi'
+	icon_state = "reiver_crossbow"
+	icon_living = "reiver_crossbow"
+	icon_dead = "reiver_crossbow_dead"
+	projectiletype = /obj/item/ammo_casing/caseless/rogue/bolt
+	projectilesound = 'sound/combat/Ranged/crossbow-small-shot-01.ogg'
+	ranged = 1
+	retreat_distance = 2
+	minimum_distance = 5
+	ranged_cooldown_time = 60
+	check_friendly_fire = 1
+	loot = list(
+			/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
+			/obj/item/ammo_casing/caseless/rogue/bolt,
+			/obj/item/ammo_casing/caseless/rogue/bolt,
+			/obj/item/ammo_casing/caseless/rogue/bolt,
+			)
+	ai_controller = /datum/ai_controller/skeleton_ranged
+
+/mob/living/simple_animal/hostile/rogue/border_reiver_lance_rider
+	name = "Reiver Rider"
+	icon = 'icons/mob/monster/reiver_rider.dmi'
+	base_intents = list(/datum/intent/simple/spear/skeleton)
+	icon_state = "lance_rider"
+	icon_living = "lance_rider"
+	icon_dead = "lance_rider_dead"
+	attack_sound = 'sound/foley/pierce.ogg'
+	loot = list(/obj/item/natural/bone,	/obj/item/natural/bone, /obj/item/natural/bone,	/obj/item/rogueweapon/spear, /obj/item/skull)
+	ai_controller = /datum/ai_controller/skeleton_spear
