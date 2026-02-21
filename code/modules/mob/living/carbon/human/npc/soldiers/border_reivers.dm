@@ -468,12 +468,6 @@
 	check_friendly_fire = 1
 	health = 200
 	maxHealth = 200
-	loot = list(
-			/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
-			/obj/item/ammo_casing/caseless/rogue/bolt,
-			/obj/item/ammo_casing/caseless/rogue/bolt,
-			/obj/item/ammo_casing/caseless/rogue/bolt,
-			)
 	ai_controller = /datum/ai_controller/reiver_crossbow
 	gender = MALE
 	mob_biotypes = MOB_HUMANOID 
@@ -483,13 +477,8 @@
 	STACON = 13
 	STASTR = 14
 	STASPD = 14
-	harm_intent_damage = 10
-	melee_damage_lower = 10
-	melee_damage_upper = 25
 	vision_range = 7
 	aggro_vision_range = 9
-	retreat_distance = 0
-	minimum_distance = 0
 	limb_destroyer = 0
 	attack_verb_continuous = "bashes"
 	attack_verb_simple = "bash"
@@ -516,12 +505,11 @@
 	gender = MALE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	robust_searching = 1
-	turns_per_move = 3
-	move_to_delay = 2
+	turns_per_move = 5
+	move_to_delay = 13
 	STACON = 15
 	STASTR = 12
 	STASPD = 18
-	harm_intent_damage = 10
 	melee_damage_lower = 60
 	melee_damage_upper = 90
 	vision_range = 7
@@ -529,12 +517,9 @@
 	retreat_distance = 0
 	minimum_distance = 0
 	limb_destroyer = 0
-	attack_verb_continuous = "hacks"
-	attack_verb_simple = "hack"
-	attack_sound = 'sound/blank.ogg'
 	canparry = TRUE
 	d_intent = INTENT_PARRY
-	defprob = 50
+	defprob = 60
 	speak_emote = list("grunts")
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
 	del_on_death = FALSE
@@ -546,9 +531,9 @@
 	icon_state = "sabre_rider"
 	icon_living = "sabre_rider"
 	icon_dead = "sabre_rider_dead"
-	harm_intent_damage = 10
 	melee_damage_lower = 30
 	melee_damage_upper = 45
+	attack_sound = 'sound/combat/hits/bladed/genslash (1).ogg'
 
 /datum/intent/simple/spear/reiver_rider_lancer
 	reach = 2
