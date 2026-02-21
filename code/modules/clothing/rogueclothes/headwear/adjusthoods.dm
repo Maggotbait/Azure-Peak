@@ -305,6 +305,9 @@
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 
+/obj/item/clothing/head/roguetown/roguehood/shroudwhite/evil_ah_ah
+	color = CLOTHING_SCARLET
+
 //
 
 /obj/item/clothing/head/roguetown/roguehood/psydon
