@@ -945,11 +945,11 @@
 	desc = "A heavy shield, taller and thicker than most of their contemporaries. It has survived the Calamity, endured the Apotheosis, and blunted the Sundering; and for one final time, it shall ward this dying world from a crueler fate."
 	icon_state = "bronzegreatshield"
 	item_state = "bronzegreatshield"
-	max_integrity = 360 //Highest integrity and passive projectile-blocking chance of most non-unique shields. Defense is consequently reduced to Buckler levels, however. Time your blocks and take one for the team!
+	max_integrity = 360 //Highest integrity and passive projectile-blocking chance of most non-unique shields.
 	possible_item_intents = list(/datum/intent/shield/block, /datum/intent/mace/smash/shield/metal/great, /datum/intent/effect/daze) // No SHIELD_BASH. Able to inflict Daze due to its weight.
 	force = 28
 	coverage = 75 
-	wdefense = 9
+	wdefense = 12
 	minstr = 12 //Requires a natural +STR modifier or statpack to double as a melee weapon, for its given class. Note that it has a heavier charge time and active stamina drain, too, as.. well, it's quite heavy.
 
 /obj/item/rogueweapon/shield/bronze/great/get_mechanics_examine(mob/user)
