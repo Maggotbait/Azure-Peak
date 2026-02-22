@@ -7,9 +7,9 @@
 	grid_width = 32
 	grid_height = 96
 	var/assembled = FALSE
-	var/list/tent_walls = list() // Stored wall objects
-	var/list/tent_doors = list() // Stored door objects
-	var/list/roof_tiles = list()
+	var/list/obj/structure/tent_wall/tent_walls = list()
+	var/list/obj/structure/roguetent/tent_doors = list()
+	var/list/turf/roof_tiles = list()
 	var/tent_width = 3 //! Always 3 wide
 	var/tent_length = 5 // Default length, can be adjusted for deluxes
 	//repair vars
