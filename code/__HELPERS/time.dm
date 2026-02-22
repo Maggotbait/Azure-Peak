@@ -29,6 +29,11 @@ GLOBAL_VAR_INIT(forecast, FALSE)
 GLOBAL_VAR_INIT(todoverride, FALSE)
 GLOBAL_VAR_INIT(dayspassed, FALSE)
 
+GLOBAL_VAR_INIT(date_override_enabled, FALSE)
+GLOBAL_VAR_INIT(date_override_day, 1)
+GLOBAL_VAR_INIT(date_override_month, 1)
+GLOBAL_VAR_INIT(date_override_offset, 0)
+
 /proc/settod()
 	var/time = station_time()
 	var/oldtod = GLOB.tod
@@ -116,7 +121,8 @@ GLOBAL_VAR_INIT(dayspassed, FALSE)
 		return
 	if(GLOB.tod == "dawn")
 		var/text_to_show
-		switch(GLOB.dayspassed)
+		var/day_number = get_current_day_of_week()
+		switch(day_number)
 			if(1)
 				text_to_show = "DAWN OF THE FIRST DAE\nMOON'S DAE"
 			if(2)
