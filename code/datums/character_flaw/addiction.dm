@@ -131,7 +131,7 @@
 	desc = "I can't start my day without a cup of tea or coffee."
 	time = 40 MINUTES
 	needsate_text = "I need a hot brew."
-	voyeur_descriptor = "in need of a cuppa"
+	voyeur_descriptor = "in need of a brew"
 
 /// GOD-FEARING
 
