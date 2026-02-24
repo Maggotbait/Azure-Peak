@@ -59,9 +59,9 @@
 	name = "Hag/Codger"
 /datum/mob_descriptor/stature/hag/get_description(mob/living/described)
 	switch(described.pronouns)
-		if(SHE_HER)
+		if(SHE_HER || SHE_HER_M)
 			return "hag"
-		if(HE_HIM)
+		if(HE_HIM || HE_HIM_F)
 			return "codger"
 		if(THEY_THEM)
 			return "senior"
